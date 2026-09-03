@@ -78,7 +78,7 @@ tests/  TaskApi.Tests.csproj  TaskApiTests.cs  -- xUnit integration tests
 ## Background
 
 A companion write-up of the design decisions is here:
-[Building a Tested ASP.NET Core Minimal API in One File](https://dev.to/zahid23saim).
+[Building a Tested ASP.NET Core Minimal API in One File](https://dev.to/zahid23saim/building-a-tested-aspnet-core-minimal-api-in-one-file-20c1).
 
 ## License
 
