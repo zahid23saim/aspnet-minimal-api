@@ -1,9 +1,16 @@
 # aspnet-minimal-api
 
+[![CI](https://github.com/zahid23saim/aspnet-minimal-api/actions/workflows/ci.yml/badge.svg)](https://github.com/zahid23saim/aspnet-minimal-api/actions/workflows/ci.yml)
+![.NET 8](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet&logoColor=white)
+![xUnit](https://img.shields.io/badge/tests-xUnit-2a78d6)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A small, complete **ASP.NET Core Minimal API** (.NET 8) — a task-tracker with full
 CRUD, input validation, correct HTTP status codes, and **integration tests that
 exercise the real endpoints** in memory. It is intentionally compact: one
 `Program.cs` you can read top to bottom, and a test project that proves it works.
+
+![All 7 xUnit integration tests passing in GitHub Actions CI: create and fetch, complete, trim, 400 on a blank title, 404 on a missing id, delete then 404](docs/test-run.png)
 
 Minimal APIs let you define endpoints as small lambdas instead of controllers,
 which keeps a service like this readable in a single file while still returning
@@ -56,7 +63,7 @@ call the endpoints over real HTTP — no mocks, no running server. A fresh facto
 per test gives each test its own store, so they stay isolated.
 
 ```bash
-dotnet test
+dotnet test tests
 ```
 
 ```
